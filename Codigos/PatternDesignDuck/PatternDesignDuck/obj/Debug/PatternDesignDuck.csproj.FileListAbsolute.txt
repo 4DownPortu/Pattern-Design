@@ -1,0 +1,7 @@
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\bin\Debug\PatternDesignDuck.exe.config
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\bin\Debug\PatternDesignDuck.exe
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\bin\Debug\PatternDesignDuck.pdb
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\obj\Debug\PatternDesignDuck.csproj.AssemblyReference.cache
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\obj\Debug\PatternDesignDuck.csproj.CoreCompileInputs.cache
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\obj\Debug\PatternDesignDuck.exe
+C:\Users\adolf\OneDrive\Documentos\GitHub\Pattern-Design\Codigos\PatternDesignDuck\PatternDesignDuck\obj\Debug\PatternDesignDuck.pdb
