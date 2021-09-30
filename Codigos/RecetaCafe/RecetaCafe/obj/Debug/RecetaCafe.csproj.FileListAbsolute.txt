@@ -1,0 +1,7 @@
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\bin\Debug\RecetaCafe.exe.config
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\bin\Debug\RecetaCafe.exe
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\bin\Debug\RecetaCafe.pdb
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\obj\Debug\RecetaCafe.csproj.AssemblyReference.cache
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\obj\Debug\RecetaCafe.csproj.CoreCompileInputs.cache
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\obj\Debug\RecetaCafe.exe
+C:\Users\adolf\source\repos\RecetaCafe\RecetaCafe\obj\Debug\RecetaCafe.pdb
