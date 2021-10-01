@@ -10,7 +10,7 @@ un menú con las siguientes especies de pato:
 Cada especie tendrá los siguientes comportamientos:
 - Volar
 - Nadar
--Graznar
+- Graznar
 
 Dentro de cada comportamiento definan ustedes al menos 3 tipos de comportamiento por ejemplo en Graznar tendríamos Quack, SQueeze y, mute. Así lo harán con Nadar y con Volar
 
