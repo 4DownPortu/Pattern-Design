@@ -7,7 +7,9 @@ un menú con las siguientes especies de pato:
 - Decoy Duck
 - Model Duck
 - Rubber Duck
+
 Cada especie tendrá los siguientes comportamientos:
+
 - Volar
 - Nadar
 - Graznar
