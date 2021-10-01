@@ -21,44 +21,55 @@ public  class Duck
         Console.Clear();
         //Menu de modificar
         int desicion;
-        Console.WriteLine("Como quieres que tu pato nade? \n (Digite el numero segun lo deseado)");
-        Console.WriteLine("1.Rapido");
-        Console.WriteLine("2.Lento");
-        Console.WriteLine("3.Modo sirena");
+        Console.WriteLine("Quiere modificar algun comportamiento");
+        Console.WriteLine("1.Si");
+        Console.WriteLine("2.No");
         desicion = Convert.ToInt32(Console.ReadLine());
 
-        switch (desicion)
+        if (desicion== 1)
         {
-            case 1:
+            int comportamiento;
 
-                Console.WriteLine("Muy bien ahora tu pato puede hacer nadar rapido.");
-                pato[5] = "Si";
-                pato[6] = "rapido";
-                break;
+            Console.WriteLine("Cual comportamiento quiere modificar?");
+            Console.WriteLine("1.Vuelo");
+            Console.WriteLine("2.Graznar");
+            Console.WriteLine("3.Nadar");
+            comportamiento = Convert.ToInt32(Console.ReadLine());
 
-            case 2:
+            if (comportamiento == 1)
+            {
+                Volar();
+                Modificaciones();
 
-                Console.WriteLine("Muy bien ahora tu pato puede hacer Squeeze.");
-                pato[5] = "Si";
-                pato[6] = "Lento";
-                break;
-
-            case 3:
-
-                Console.WriteLine("Esta bien, supongo que tambien existen patos mudos.");
-                pato[5] = "Si";
-                pato[6] = "Sirena";
-                break;
-
-
-            default:
-                Console.WriteLine("Selecciona unicamente una de las opciones posibles:");
-                Console.ReadKey();
+                int reporte;
+                Console.WriteLine("Quieres ver el reporte de tu nuevo pato?");
+                reporte = Convert.ToInt32(Console.ReadLine());
+            }
+            else if (comportamiento == 2)
+            {
+                Graznar();
+                Modificaciones();
+            }
+            else if (comportamiento == 3)
+            {
                 Nadar();
-                break;
+                Modificaciones();
+            }
+            else
+            {
+                Console.WriteLine("Selecciona unicamente una opcion dentro del rango disponible.");
+                Console.ReadKey();
+                Modificaciones();
+
+            }
+        }
+        else if(desicion == 2 )
+        {
+            Console.WriteLine("Excelente entonces. Tu nuevo pato esta listo");
 
 
         }
+       
 
 
 
