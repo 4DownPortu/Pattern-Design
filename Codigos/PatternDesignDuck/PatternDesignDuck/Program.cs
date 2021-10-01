@@ -28,6 +28,7 @@ public  class Duck
 
         if (desicion== 1)
         {
+            Console.Clear();
             int comportamiento;
 
             Console.WriteLine("Cual comportamiento quiere modificar?");
@@ -64,6 +65,7 @@ public  class Duck
         else if(desicion == 2 )
         {
             int reporte2;
+            Console.Clear();
             Console.WriteLine("Excelente entonces tu pato esta listo");
             Console.WriteLine("Quieres visualizar el reporte de nuevo?");
             Console.WriteLine("1. Si ");
@@ -72,21 +74,60 @@ public  class Duck
 
             if (reporte2 == 1)
             {
+                int decision2;
+                Console.Clear();
                 Reporte();
                 Console.ReadKey();
+
+                Console.Clear();
+                Console.WriteLine("Desea realizar otra modificacion?");
+                Console.WriteLine("1. Si");
+                Console.WriteLine("2. No");
+                decision2 = Convert.ToInt32(Console.ReadLine());
+
+                if (decision2 == 1)
+                {
+                    Modificaciones();
+
+                }
+                else if(decision2 == 2)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Excelente, buen dia, gracias por utilizar nuestro software.");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Selecciona unicamente una opcion dentro del rango disponible\n\nPresiona ENTER para continuar:");
+                    Console.ReadKey();
+                    Modificaciones();
+                }
+                
+                
             }
             else if(reporte2 == 2)
             {
+                Console.Clear();
                 Console.WriteLine("Excelente, buen dia, gracias por utilizar nuestro software.");
                 Console.ReadKey();
             }
             else
             {
-                Console.WriteLine("Seleccione unicamente una opcion dentro del rango posible");
-
+                Console.Clear();
+                Console.WriteLine("Selecciona unicamente una opcion dentro del rango disponible\n\nPresiona ENTER para continuar:");
+                Console.ReadKey();
+                Modificaciones();
             }
 
 
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("Selecciona unicamente una opcion dentro del rango disponible\n\nPresiona ENTER para continuar:");
+            Console.ReadKey();
+            Modificaciones();
         }
        
 
@@ -101,6 +142,7 @@ public  class Duck
 
         Console.WriteLine("\n\t|REPORTE DE PATO|\n");
         Console.WriteLine("Tipo:----------------" + pato[0]);
+        Console.WriteLine("\n");
         Console.WriteLine("Vuela:---------------" + pato[1]);
         Console.WriteLine("Tipo de vuelo:-------" + pato[2]);
         Console.WriteLine("Grazna:--------------" + pato[3]);
@@ -108,7 +150,7 @@ public  class Duck
         Console.WriteLine("Nada:----------------" + pato[5]);
         Console.WriteLine("Tipo de nado:--------" + pato[6]);
 
-        Console.WriteLine("\nPresione cualquier tecla para continuar");
+        Console.WriteLine("\nPresione ENTER para continuar");
 
         Console.ReadKey();
 
@@ -121,7 +163,7 @@ public  class Duck
         Console.Clear();
         //Decicion de si nadara o no.
         int desicion;
-        Console.WriteLine("\n\t-----|¿Como quieres que tu pato nade?|----- \n____(Digite el numero segun lo deseado)_____");
+        Console.WriteLine("\n\t-----|¿Como quieres que tu pato nade?|-----\n\t____(Digite el numero segun lo deseado)_____\n");
         Console.WriteLine("1.Rapido");
         Console.WriteLine("2.Lento");
         Console.WriteLine("3.Modo sirena");
@@ -139,7 +181,7 @@ public  class Duck
 
             case 2:
                 Console.Clear();
-                Console.WriteLine("Muy bien ahora tu pato puede hacer Squeeze.");
+                Console.WriteLine("Muy bien ahora tu pato puede nadar lento.");
                 Console.ReadKey();
                 pato[5] = "Si";
                 pato[6] = "Lento";
@@ -174,7 +216,7 @@ public  class Duck
         Console.Clear();
         //Decicion de si graznara o no.
         int desicion;
-        Console.WriteLine("\n\t-----|¿Como quieres que tu pato grazne?|----- \n\t____(Digite el numero segun lo deseado)____");
+        Console.WriteLine("\n\t-----|¿Como quieres que tu pato grazne?|-----\n\t____(Digite el numero segun lo deseado)____\n");
         Console.WriteLine("1.Quack");
         Console.WriteLine("2.Squeeze");
         Console.WriteLine("3.Mute");
