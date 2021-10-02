@@ -77,7 +77,7 @@ public  class Duck
                 int decision2;
                 Console.Clear();
                 Reporte();
-                Console.ReadKey();
+                
 
                 Console.Clear();
                 Console.WriteLine("Desea realizar otra modificacion?");
@@ -162,16 +162,31 @@ public  class Duck
     {
         Console.Clear();
         //Decicion de si nadara o no.
-        int desicion;
+        char desicion;
         Console.WriteLine("\n\t-----|¿Como quieres que tu pato nade?|-----\n\t____(Digite el numero segun lo deseado)_____\n");
         Console.WriteLine("1.Rapido");
         Console.WriteLine("2.Lento");
         Console.WriteLine("3.Modo sirena");
-        desicion = Convert.ToInt32(Console.ReadLine());
+
+        try
+        {
+            desicion = Convert.ToChar(Console.ReadLine());
+
+        }
+        catch (Exception)
+        {
+            Console.Clear();
+            Console.WriteLine("Favor de seleccionar una de las opciones dentro del rango posible");
+            Console.ReadLine();
+            tipopatos();
+            throw;
+        }
+
+       
 
         switch (desicion)
         {
-            case 1:
+            case '1':
                 Console.Clear();
                 Console.WriteLine("Muy bien ahora tu pato puede hacer nadar rapido.");
                 Console.ReadKey();
@@ -179,7 +194,7 @@ public  class Duck
                 pato[6] = "rapido";
                 break;
 
-            case 2:
+            case '2':
                 Console.Clear();
                 Console.WriteLine("Muy bien ahora tu pato puede nadar lento.");
                 Console.ReadKey();
@@ -187,7 +202,7 @@ public  class Duck
                 pato[6] = "Lento";
                 break;
 
-            case 3:
+            case '3':
                 Console.Clear();
                 Console.WriteLine("Excelente ahora tu pato nada como sirena.");
                 Console.ReadKey();
@@ -199,7 +214,6 @@ public  class Duck
             default:
                 Console.Clear();
                 Console.WriteLine("Selecciona unicamente una de las opciones posibles:");
-                Console.ReadKey();
                 Console.ReadKey();
                 Nadar();
                 break;
@@ -215,16 +229,30 @@ public  class Duck
     {
         Console.Clear();
         //Decicion de si graznara o no.
-        int desicion;
+        char desicion;
         Console.WriteLine("\n\t-----|¿Como quieres que tu pato grazne?|-----\n\t____(Digite el numero segun lo deseado)____\n");
         Console.WriteLine("1.Quack");
         Console.WriteLine("2.Squeeze");
         Console.WriteLine("3.Mute");
-        desicion = Convert.ToInt32(Console.ReadLine());
 
+        try
+        {
+            desicion = Convert.ToChar(Console.ReadLine());
+
+        }
+        catch (Exception)
+        {
+            Console.Clear();
+            Console.WriteLine("Favor de seleccionar una de las opciones dentro del rango posible");
+            
+            Console.ReadKey();
+            tipopatos();
+            throw;
+        }
+        
         switch (desicion)
         {
-            case 1:
+            case '1':
                 Console.Clear();
                 Console.WriteLine("Muy bien ahora tu pato puede hacer Quack." );
                 Console.ReadKey();
@@ -232,7 +260,7 @@ public  class Duck
                 pato[4] = "Quack";
                 break;
 
-            case 2:
+            case '2':
                 Console.Clear();
                 Console.WriteLine("Muy bien ahora tu pato puede hacer Squeeze.");
                 Console.ReadKey();
@@ -240,7 +268,7 @@ public  class Duck
                 pato[4] = "Squeeze";
                 break;
 
-            case 3:
+            case '3':
                 Console.Clear();
                 Console.WriteLine("Esta bien, supongo que tambien existen patos mudos.");
                 Console.ReadKey();
@@ -266,17 +294,30 @@ public  class Duck
     {
         Console.Clear();
         //Decicion de si volara o no.
-        int desicion;
+        char desicion;
         
         Console.WriteLine("\n\t-----|¿Como quieres que tu pato vuele?|-----\n\t____(Digite el numero segun lo deseado)____\n");
         Console.WriteLine("1.Alto");
         Console.WriteLine("2.Bajo");
         Console.WriteLine("3.No vuela");
-        desicion = Convert.ToInt32(Console.ReadLine());
+
+        try
+        {
+            desicion = Convert.ToChar(Console.ReadLine());
+        }
+        catch (Exception)
+        {
+            Console.Clear();
+            Console.WriteLine("Favor de seleccionar una de las opciones dentro del rango posible");
+            Console.ReadKey();
+            tipopatos();
+            throw;
+        }
+        
 
         switch (desicion)
         {
-            case 1:
+            case '1':
                 Console.Clear();
                 Console.WriteLine("Muy bien ahora tu pato puede volar alto");
                 Console.ReadKey();
@@ -284,7 +325,7 @@ public  class Duck
                 pato[2] = "Alto";
                 break;
 
-            case 2:
+            case '2':
                 Console.Clear();
                 Console.WriteLine("Muy bien, ahora tu pato vuela bajo");
                 Console.ReadKey();
@@ -292,7 +333,7 @@ public  class Duck
                 pato[2] = "Bajo";
                 break;
 
-            case 3:
+            case '3':
                 Console.Clear();
                 Console.WriteLine("Esta bien no todos los patos deben de volar");
                 Console.ReadKey();
@@ -321,7 +362,7 @@ public  class Duck
     public void tipopatos()
     {
         Console.Clear();
-        int tipo;
+        char tipo;
         //Seleccion de patos
         Console.WriteLine("\n\t -----|Seleccione un tipo de pato:|-----\n\t(Digite el numero segun el pato deseado)\n");
        
@@ -332,36 +373,48 @@ public  class Duck
         Console.WriteLine("4. Model Duck");
         Console.WriteLine("5. Rubber Duck");
 
-        tipo = Convert.ToInt32(Console.ReadLine());
-
+        try
+        {
+            tipo = Convert.ToChar(Console.ReadLine());
+        }
+        catch (Exception)
+        {
+            Console.Clear();
+            Console.WriteLine("Favor de seleccionar una de las opciones dentro del rango posible");
+            Console.WriteLine("\n");
+            Console.ReadKey();
+            tipopatos();
+            throw;
+        }
+        
 
         switch (tipo)
         {
-            case 1:
+            case '1':
                 Console.Clear();
                 Console.WriteLine("Excelente decision tu pato sera Mallard Duck");
                 Console.ReadKey();
                 pato[0] = "Mallard Duck"; 
                 break;
-            case 2:
+            case '2':
                 Console.Clear();
                 Console.WriteLine("Excelente decision tu pato sera RedHead Duck");
                 pato[0] = "RedHead Duck";
                 Console.ReadKey();
                 break;
-            case 3:
+            case '3':
                 Console.Clear();
                 Console.WriteLine("Excelente decision tu pato sera Decoy Duck");
                 pato[0] = "Decoy Duck";
                 Console.ReadKey();
                 break;
-            case 4:
+            case '4':
                 Console.Clear();
                 Console.WriteLine("Excelente decision tu pato sera Model Duck");
                 pato[0] = "Model Duck";
                 Console.ReadKey();
                 break;
-            case 5:
+            case '5':
                 Console.Clear();
                 Console.WriteLine("Excelente decision tu pato sera Rubber Duck");
                 pato[0] = "Rubber Duck";
@@ -371,10 +424,11 @@ public  class Duck
             default:
                 Console.Clear();
                 Console.WriteLine("Favor de seleccionar una de las opciones dentro del rango posible");
-                Console.ReadLine();
+                Console.ReadKey();
                 tipopatos();
                 break;
         }
+
     }
 
 }
