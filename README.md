@@ -1,4 +1,4 @@
 # Pattern-Design
-![alt text](https://ittlenguajesdeinterfaz.files.wordpress.com/2018/11/ensamblador1.jpg?w=629&h=258&crop=1)
+![alt text](https://escuela.it/storage/course_images/imagen-curso-patrones-diseno-software-bueno-91.jpg)
 - Programas de la clase de patrones de diseño
 - 8vo semestre
